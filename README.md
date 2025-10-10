@@ -1,16 +1,15 @@
-# React + Vite
+# DevOps CI/CD Pipeline – Vite React App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 📝 Project Description
+This project demonstrates the automation of a full CI/CD workflow using GitHub Actions, Docker, Docker Hub, and AWS EC2.
 
-Currently, two official plugins are available:
+## ⚙️ CI/CD Pipeline Overview
+1. **Build:** Docker image is built automatically when code is pushed.
+2. **Test:** (Optional) Run simple tests or ensure container starts successfully.
+3. **Push:** The image is pushed to Docker Hub using GitHub Secrets for authentication.
+4. **Deploy:** The image is deployed to AWS EC2 via SSH.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## React Compiler
-
-The React Compiler is not enabled on this template. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🚀 How to Run the App
+1. Clone the repository  
+   ```bash
+   git clone https://github.com/alishba-cmd/Vite-APP-DEVOPS.git
