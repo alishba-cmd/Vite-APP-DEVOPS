@@ -49,7 +49,7 @@ jobs:
           username: ubuntu
           key: ${{ secrets.AWS_PRIVATE_KEY }}
           script: |
-            docker pull ${{ secrets.DOCKERHUB_USERNAME }}/vite-app:latest
-            docker stop vite-app || true
+            docker pull ${{ secrets.DOCKERHUB_USERNAME }}/vite-project:latest
+            docker stop vite-project || true
             docker rm vite-app || true
-            docker run -d -p 80:80 --name vite-app ${{ secrets.DOCKERHUB_USERNAME }}/vite-app:latest
+            docker run -d -p 80:80 --name vite-app ${{ secrets.DOCKERHUB_USERNAME }}/vite-project:latest
